@@ -16,7 +16,6 @@ public:
         arrCount+=1;
     }
 
-
     void search(ll k){
         clock_t timer;
         timer = clock();
@@ -28,11 +27,5 @@ public:
         }
     }
   }
-//  ll* generateKeys(){
-//      ll* temp = new ll[101];
-//        for(int k = 0; k < 100; k++){
-//            temp[k] = a[k*173%9].getKey();
-//        }
-//      return temp;
-//  };
+
 };

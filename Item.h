@@ -24,7 +24,7 @@ public:
         return key;
     }
 
-    void setKey(long long int key) {
+    void setKey(long long key) {
         Item::key = key;
     }
 
@@ -52,7 +52,6 @@ public:
         return false;
     }
     friend ostream& operator<<(ostream &os,Item& i){
-
         os << "UPC Code: " << i.key << "\n" << "Item Info: " << i.data << endl;
         return os;
     }

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Assignment4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/alex/CLionProjects/Hashing/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/alex/CLionProjects/Hashing/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/alex/CLionProjects/Hashing/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Assignment4">
+				<Option output="/Users/alex/CLionProjects/Hashing/cmake-build-debug/Assignment4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alex/CLionProjects/Hashing/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment4"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Assignment4/fast">
+				<Option output="/Users/alex/CLionProjects/Hashing/cmake-build-debug/Assignment4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alex/CLionProjects/Hashing/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment4/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/CLionProjects/Hashing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/BarcodeArrayScanner.cpp">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/BarcodeBSTScanner.cpp">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/BinarySearchTree.h">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/ClientProgram.h">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/HashMap.cpp">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/HashNode.h">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/Item.h">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/LinkedList.h">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/main.cpp">
+			<Option target="Assignment4"/>
+		</Unit>
+		<Unit filename="/Users/alex/CLionProjects/Hashing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
