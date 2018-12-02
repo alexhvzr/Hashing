@@ -20,6 +20,8 @@ public:
         tree.insert(i);
     }
 
+    
+
     void search(string key) {
         Item i;
         i.setKey(key);
@@ -27,9 +29,11 @@ public:
         timer = clock();
         bool found = tree.search(i);
         timer = clock() - timer;
-        int ms = double(timer) / CLOCKS_PER_SEC * 1000;
+        int mics = double(timer) / CLOCKS_PER_SEC * 1000000;
+        int mils = double(timer) / CLOCKS_PER_SEC * 1000;
         if (found) {
-            cout << "BST search time: " << ms << " milliseconds." << endl;
+            cout << "BST search time: " << mics << " microseconds." << endl;
+            cout << "BST search time: " << mils << " milliseconds." << endl;
         }
     }
 
