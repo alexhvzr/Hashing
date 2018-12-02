@@ -4,6 +4,7 @@
 
 #ifndef ASSIGNMENT4_LINKEDLIST_H
 #define ASSIGNMENT4_LINKEDLIST_H
+
 #include <iostream>
 
 using namespace std;
@@ -25,22 +26,15 @@ struct Node { // struct is just like a class but everything is set to public ini
     T data;
     Node<T> *next;
 
-    Node() {
-        data;
-        *next;
-    };
-
-    Node(T data) : data(data), next(nullptr) {}     //constructor
-
-    Node(T data, Node *next) : data(data), next(next) {}  //constructor
-
+    Node(T data) : data(data), next(NULL) {}     //constructor
+    //Node(T data, Node *next) : data(data), next(next) {}  //constructor
 };
 
 template<class T>
 class LinkedList {
     //friend class OrderedLinkedList;
 private:
-    LinkedList(const LinkedList &) = delete; //copy constructor
+    // LinkedList(const LinkedList &) = delete; //copy constructor
 
 protected:
     int count;
@@ -62,10 +56,7 @@ public:
 
     T back();
 
-    void insert();
-
-    void search( LinkedList<T> &,T*&);
-
+    bool search(LinkedList<T> &, T &);
 
     // mutator methods
     void insertFirst(T &);
@@ -88,7 +79,7 @@ public:
 template<class T>
 LinkedList<T>::LinkedList() {
 
-   // cout << "i1" <<endl;
+    // cout << "i1" <<endl;
     head = last = NULL;
     count = 0;
 }
@@ -120,7 +111,9 @@ T LinkedList<T>::back() {
 
 template<class T>
 void LinkedList<T>::insertFirst(T &item) {
+    cout << item;
     Node<T> *temp = new Node<T>(item);
+    // temp->data = item;
     temp->next = head;
     head = temp;
     count++;
@@ -130,11 +123,12 @@ void LinkedList<T>::insertFirst(T &item) {
 template<class T>
 void LinkedList<T>::insertLast(T &item) {
     Node<T> *newnode = new Node<T>(item);
-    newnode->next = NULL;
     if (head == NULL) { head = last = newnode; }
     else {
         last->next = newnode;
         last = newnode;
+        last->next = NULL;
+
     }
     count++;
 }
@@ -167,6 +161,19 @@ void LinkedList<T>::deleteNode(T &item) {
 }
 
 template<class T>
+bool LinkedList<T>::search(LinkedList<T> &list, T &item) {
+    Node<T> *r = list.head;
+    while (r != NULL) {
+        if (item == r->data) {
+            return true;
+        }
+        r = r->next;
+    }
+    return false;
+}
+
+
+template<class T>
 void LinkedList<T>::destroylist() {
     Node<T> *p;
     while (head != NULL) {
@@ -178,11 +185,6 @@ void LinkedList<T>::destroylist() {
     count = 0;
 }
 
-template<class T>
-LinkedList<T> &LinkedList<T>::operator=(LinkedList<T> &list) {
-    if (this != &list) { copylist(list); }
-    return *this;
-}
 
 template<class T>
 ostream &operator<<(ostream &os, LinkedList<T> &list) {
@@ -194,20 +196,10 @@ ostream &operator<<(ostream &os, LinkedList<T> &list) {
     return os;
 }
 
+
 //class destructor
 template<class T>
 LinkedList<T>::~LinkedList() { destroylist(); }
 
-template<class T>
-void LinkedList<T>::search(LinkedList<T> &list, T*& item) {
-    T *p;
-    while(p != NULL){
-        if (item == p){
-            cout << "found" << endl;
-        }
-    }
-
-
-}
 
 #endif //ASSIGNMENT4_LINKEDLIST_H

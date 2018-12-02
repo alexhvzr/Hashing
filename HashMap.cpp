@@ -3,41 +3,45 @@
 //
 
 #include "HashNode.h"
-#include <iostream>
 
-
-#define ll long long
 #define hno hNode
 
-using namespace std;
-const int tableSize = 1301;
 
-class HashMap{
+using namespace std;
+const int tableSize = 1000;
+
+class HashMap {
 
     LinkedList<hno> hnl[tableSize];
 
 public:
 
-    int generateHashNum(ll hn, int tableSize){
-
-        return (int)(hn % tableSize) % 1000;
+    int generateHashNum(string hn, int tableSize) {
+        int sval = 0;
+        for (int i = 0; i < hn.length(); i++) {
+            sval = sval + hn[i];
+        }
+        return sval % 1000;
     }
 
-    void search(ll key){
-        hno *temp;
-        temp->setKey(key);
-        ll index = generateHashNum(key,tableSize);
-        hnl->search(hnl[index],temp);
+    void search(string key) {
+        hno temp(key, "");
+        int index = generateHashNum(key, tableSize);
+        clock_t timer;
+        timer = clock();
+        bool found = hnl->search(hnl[index], temp);
+        timer = clock() - timer;
+        int ms = double(timer) / CLOCKS_PER_SEC * 1000;
+        if (found) {
+            cout << "Hash table search time: " << ms << " milliseconds." << endl;
+        }
 
     }
 
-    void insert(hno hn){
-        ll index = generateHashNum(hn.getKey(),tableSize);
+    void insert(hno hn) {
+        int index = generateHashNum(hn.getKey(), tableSize);
         hnl[index].insertLast(hn);
     }
-
-
-
 
 
 };

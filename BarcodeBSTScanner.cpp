@@ -6,32 +6,32 @@
 
 #include "BinarySearchTree.h"
 #include "Item.h"
-#include <iostream>
-#include <sstream>
-#include <stdio.h>
 #include <time.h>
-#define ll long long
+
 
 #include <fstream>
 
 class BarcodeBSTScanner {
-BinarySearchTree<Item> tree;
+    BinarySearchTree<Item> tree;
 
 public:
 
-void addItem(Item& i){
-tree.insert(i);
-}
+    void addItem(Item &i) {
+        tree.insert(i);
+    }
 
-void search(ll key){
-Item i;
-i.setKey(key);
-clock_t timer;
-timer = clock();
-tree.search(i);
-timer = clock() - timer;
-cout << "BST time: " << timer << " milliseconds." <<endl;
-}
+    void search(string key) {
+        Item i;
+        i.setKey(key);
+        clock_t timer;
+        timer = clock();
+        bool found = tree.search(i);
+        timer = clock() - timer;
+        int ms = double(timer) / CLOCKS_PER_SEC * 1000;
+        if (found) {
+            cout << "BST search time: " << ms << " milliseconds." << endl;
+        }
+    }
 
 
 };

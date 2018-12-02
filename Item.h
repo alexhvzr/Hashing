@@ -9,22 +9,22 @@
 #include <map>
 #include <sstream>
 #include <stdio.h>
-#define ll long long
+
 
 #include <fstream>
 using namespace std;
 class Item{
-    ll key = 0;
+    string key;
     string data;
 public:
-    Item(){};
-    Item(long long _key, string _data) : key(_key), data(_data){}
+    Item() = default;
+    Item(string _key, string _data) : key(_key), data(_data){}
 
-    long long int getKey() const {
+    string getKey() const {
         return key;
     }
 
-    void setKey(long long key) {
+    void setKey(string key) {
         Item::key = key;
     }
 
@@ -35,21 +35,15 @@ public:
     void setData(const string &data) {
         Item::data = data;
     }
-    void operator=(Item& i){
+    void operator=(const Item& i){
         key = i.key;
         data = i.data;
     }
     bool operator<(Item& i){
-        if(i.key < this->key) {
-            return true;
-        }
-        return false;
+            return i.key < key;
     }
     bool operator>(Item& i){
-        if(i.key > this->key) {
-            return true;
-        }
-        return false;
+            return i.key > key;
     }
     friend ostream& operator<<(ostream &os,Item& i){
         os << "UPC Code: " << i.key << "\n" << "Item Info: " << i.data << endl;

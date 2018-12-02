@@ -7,25 +7,25 @@
 
 #include <iostream>
 #include "LinkedList.h"
-#define ll long long
+
 
 using namespace std;
 
 
-struct hNode{
+struct hNode {
 
-    ll key;
+    string key;
     string data;
 public:
-    hNode(ll key, string data): key(key), data(data){};
+    hNode(string key, string data) : key(key), data(data) {};
 
 
-    long long int getKey() const {
+    string getKey() const {
         return key;
     }
 
-    void setKey(long long int key) {
-        hNode::key = key;
+    void setKey(string &k) {
+        this->key.assign(k);
     }
 
     const string &getData() const {
@@ -35,21 +35,25 @@ public:
     void setData(const string &data) {
         hNode::data = data;
     }
-        friend ostream& operator<<(ostream &os,hNode& hn){
+
+    friend ostream &operator<<(ostream &os, hNode &hn) {
 
         os << "UPC Code: " << hn.key << "\n" << "Item Info: " << hn.data << endl;
         return os;
     }
 
-    bool operator==(hNode hn){
-        return key = hn.key;
+    bool operator==(const hNode &rhs) const {
+        return key == rhs.key;
     }
 
-    void operator=(hNode h){
+    bool operator!=(const hNode &rhs) const {
+        return !(rhs == *this);
+    }
+
+    void operator=(hNode h) {
         key = h.key;
         data = h.data;
     }
-
 
 
 };

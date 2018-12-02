@@ -17,12 +17,6 @@ BinarySearchTree.h
 /Users/alex/CLionProjects/Hashing/BinarySearchTree.h
 Item.h
 /Users/alex/CLionProjects/Hashing/Item.h
-iostream
--
-sstream
--
-stdio.h
--
 time.h
 -
 fstream
@@ -30,8 +24,6 @@ fstream
 
 /Users/alex/CLionProjects/Hashing/BinarySearchTree.h
 iostream
--
-map
 -
 
 /Users/alex/CLionProjects/Hashing/ClientProgram.h
@@ -59,8 +51,6 @@ HashMap.cpp
 /Users/alex/CLionProjects/Hashing/HashMap.cpp
 HashNode.h
 /Users/alex/CLionProjects/Hashing/HashNode.h
-iostream
--
 
 /Users/alex/CLionProjects/Hashing/HashNode.h
 iostream
