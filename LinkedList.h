@@ -79,14 +79,12 @@ public:
 template<class T>
 LinkedList<T>::LinkedList() {
 
-    // cout << "i1" <<endl;
     head = last = NULL;
     count = 0;
 }
 
 template<class T>
 LinkedList<T>::LinkedList(const T &item) : head(new Node<T>(item)), last(head), count(1) {
-//cout << "i2" <<endl;
 }
 
 template<class T>

@@ -8,6 +8,7 @@ int main() {
 
     test.generateBracodeData();
     test.searchKey();
+//    test.gatherSearchData();
 
 
     return 0;

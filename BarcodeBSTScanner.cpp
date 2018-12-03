@@ -20,7 +20,7 @@ public:
         tree.insert(i);
     }
 
-    
+
 
     void search(string key) {
         Item i;
@@ -32,6 +32,7 @@ public:
         int mics = double(timer) / CLOCKS_PER_SEC * 1000000;
         int mils = double(timer) / CLOCKS_PER_SEC * 1000;
         if (found) {
+//            cout << mics << "  " ;
             cout << "BST search time: " << mics << " microseconds." << endl;
             cout << "BST search time: " << mils << " milliseconds." << endl;
         }

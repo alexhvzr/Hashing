@@ -32,8 +32,11 @@ public:
         bool found = hnl->search(hnl[index], temp);
         timer = clock() - timer;
         int ms = double(timer) / CLOCKS_PER_SEC * 1000;
+        int mics = double(timer) / CLOCKS_PER_SEC * 1000000;
         if (found) {
+//            cout << mics<< endl;
             cout << "Hash table search time: " << ms << " milliseconds." << endl;
+
         }
 
     }

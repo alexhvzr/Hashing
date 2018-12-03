@@ -23,6 +23,8 @@ public:
             if (k == a[j].getKey()) {
                 timer = clock() - timer;
                 int ms = double(timer) / CLOCKS_PER_SEC * 1000;
+                int mics = double(timer) / CLOCKS_PER_SEC * 1000000;
+//                cout << mics <<endl;
                 cout << "Array search time: " << ms << " milliseconds." << endl;
                 break;
             }

@@ -125,8 +125,6 @@ int BinarySearchTree<T>::height(node<T> *n) {
 
 template<class T>
 void BinarySearchTree<T>::insert(node<T> *&r, T &item) {
-//    node<T>* temp;
-//    temp->data = item;
     if (r == NULL) {
         r = new node<T>;
         r->data = item;
@@ -184,7 +182,8 @@ bool BinarySearchTree<T>::search(node<T> *r, T &item) {
     } else if (item > r->data) {
         search(r->right, item);
     } else {
-        cout << r->data;
+        //cout << r->data;
+        return true;
     }
     return true;
 }
